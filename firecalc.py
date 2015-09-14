@@ -34,6 +34,6 @@ def main():
     xptillevel = levelexp.get(targetlvl) - currentxp
     logstolevel = round((levelexp.get(targetlvl) - currentxp) / logexp.get(logs))
 
-    print "You have %d experience left to level %d and %d %d logs left to burn." % (xptillevel, targetlvl, logstolevel, logs)
+    print "You have %d experience left to level %d and %d %s logs left to burn." % (xptillevel, targetlvl, logstolevel, logs)
 
 main()
