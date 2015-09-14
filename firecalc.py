@@ -25,10 +25,26 @@ def main():
     97 : 10692629, 98 : 11805606, 99 : 13034431 }
 
 
-    logexp = { 'Log' : 40, 'Achey Log' : 40, 'Oak' : 16, 'Willow' : 90, 'Teak' : 105,'Arctic Pine':125,'Maple':135,'Mahogany':157.5,'Eucalyptus':193.5,'Yew':202.5,'Magic':303.8,'Elder':435 }
+
+    logexp = { 'Log' : 40, 'Achey Log' : 40, 'Oak' : 16, 'Willow' : 90, 'Teak' : 105,'Arctic Pine':125,'Maple':135, 'Mahogany':157.5,'Eucalyptus':193.5,'Yew':202.5,'Magic':303.8,'Elder':435 }
+    typesoflogs = '''
+    Log
+    Achey Log
+    Oak
+    Willow
+    Teak
+    Arctic Pine
+    Maple
+    Mahogany
+    Eucalyptus
+    Yew
+    Magic
+    Elder
+    '''
 
     currentxp = input("Current XP: ")
     targetlvl = input("Target Level: ")
+    print typesoflogs
     logs = raw_input("Log type: ")
 
     xptillevel = levelexp.get(targetlvl) - currentxp
